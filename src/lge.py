@@ -8,7 +8,7 @@ from group import *
 
 icons = (
     ('table', 'table', 'http://caltopo.com/icon.png?cfg=picnicbench%2C000000%231.0'),
-    ('water', 'drinking fountain', 'https://fred-rum.github.io/lightroom-gps-extractor/icons/drinking%20fountain.png')
+    ('water', 'drinking fountain', 'https://fred-rum.github.io/lightroom-gps-extractor/icons/water.png')
 )
 
 sql_con = sqlite3.connect("C:/Users/Chris/Pictures/Lightroom/Photos.lrcat")
