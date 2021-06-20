@@ -1,3 +1,65 @@
+
+
+AgHarvestedExifMetadata.gpsLatitude (float)
+AgHarvestedExifMetadata.gpsLongitude (float)
+AgHarvestedExifMetadata.hasGPS (0 or 1)
+.id_local = 1533385 for inside-out
+or .image
+
+AgLibraryKeyword.id_global (URI)
+AgLibraryKeyword.name (e.g. bench)
+
+AgLibraryKeywordImage.image and .tag ?
+
+AgLibraryKeywordSynonym.keyword = 1533385 for inside-out
+
+https://petapixel.com/2019/05/08/how-to-search-multiple-lightroom-catalogs-at-once-with-sql-tools/
+
+SELECT
+AgLibraryKeyword.name as 'keywords',
+AgLibraryKeywordImage.image,
+AgLibraryKeywordImage.tag,
+AgHarvestedExifMetadata.gpsLatitude,
+AgHarvestedExifMetadata.gpsLongitude,
+AgHarvestedExifMetadata.hasGPS,
+AgHarvestedExifMetadata.image
+FROM
+AgLibraryKeywordImage,
+Adobe_images,
+AgLibraryKeyword,
+AgHarvestedExifMetadata
+WHERE
+AgHarvestedExifMetadata.hasGPS = 1
+AND AgHarvestedExifMetadata.image = Adobe_images.id_local
+AND AgLibraryKeywordImage.image = Adobe_images.id_local
+AND AgLibraryKeywordImage.tag = AgLibraryKeyword.id_local
+AND AgLibraryKeyword.lc_name = 'bench'
+
+
+        <Style id="table">
+          <IconStyle>
+            <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
+            <Icon>
+              <href>http://caltopo.com/icon.png?cfg=picnicbench%2C000000%231.0</href>
+            </Icon>
+          </IconStyle>
+        </Style>
+...
+        <styleUrl>#table</styleUrl>
+
+
 drinking fountain:
 https://commons.wikimedia.org/wiki/Category:USNPS_map_symbols#/media/File:Pictograms-nps-drinking_water.svg
 
+NPS symbols:
+https://www.nps.gov/maps/tools/symbol-library/
+https://github.com/nationalparkservice/symbol-library
+
+http://caltopo.com/icon.png?cfg=picnicbench%2C000000%231.0
+https://fred-rum.github.io/lightroom-gps-extractor/icons/water.png
+
+table
+bench
+log/boulder
+water
+restroom
