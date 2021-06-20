@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Icons"
+   x="0px"
+   y="0px"
+   width="39"
+   height="39"
+   viewBox="0 0 39 39"
+   enable-background="new 0 0 30 30"
+   xml:space="preserve"
+   sodipodi:docname="bench bordered filled color.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="C:\Users\Chris\Documents\GitHub\lightroom-gps-extractor\icons\bench.png"
+   inkscape:export-xdpi="156.22676"
+   inkscape:export-ydpi="156.22676"><metadata
+   id="metadata11"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+   id="defs9" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1310"
+   inkscape:window-height="869"
+   id="namedview7"
+   showgrid="false"
+   inkscape:zoom="7.8666667"
+   inkscape:cx="-4.9576266"
+   inkscape:cy="14.354754"
+   inkscape:window-x="1138"
+   inkscape:window-y="-12"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Icons"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0" />
+
+
+<g
+   id="g8536"><rect
+     rx="4.38798"
+     ry="4.38798"
+     y="1"
+     x="1"
+     height="37.32745"
+     width="36.864403"
+     id="rect4521-5"
+     style="opacity:1;fill:#ffffff;fill-opacity:0.49803922;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" /><rect
+     rx="4.38798"
+     ry="4.38798"
+     y="1"
+     x="1"
+     height="37"
+     width="37"
+     id="rect4521"
+     style="opacity:1;fill:none;fill-opacity:0.18823529;stroke:#7f7f7f;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" /></g><rect
+   style="opacity:1;fill:none;fill-opacity:0.18823529;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+   id="rect4521-8"
+   width="36.864403"
+   height="37.32745"
+   x="1.0677986"
+   y="0.8362751"
+   ry="4.38798"
+   rx="4.38798" /><path
+   style="fill:#7c2828;fill-opacity:1"
+   id="path2"
+   d="m 34.5,14.002723 c -23.169095,-0.02614 -4.293068,0.05322 -29.9999996,0 v 3 H 10.5 l -2.9999996,8 H 10.5 l 3,-8 h 12 l 3,8 h 3 l -3,-8 h 6 z"
+   inkscape:connector-curvature="0"
+   sodipodi:nodetypes="ccccccccccccc" /></svg>

@@ -6,9 +6,26 @@ import sqlite3
 # My files
 from group import *
 
+# The icon data is a list of tuples, with each tuple as follows:
+#   tag: a safe XML ID
+#   keyword: as used in Lightroom
+#   href: a URL to an icon
 icons = (
-    ('table', 'table', 'http://caltopo.com/icon.png?cfg=picnicbench%2C000000%231.0'),
-    ('water', 'drinking fountain', 'https://fred-rum.github.io/lightroom-gps-extractor/icons/water.png')
+    ('table',
+     'table',
+     'https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png'),
+    ('bench',
+     'bench',
+     'https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png'),
+    ('seat',
+     'log/boulder',
+     'https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png'),
+    ('water',
+     'drinking fountain',
+     'https://fred-rum.github.io/lightroom-gps-extractor/icons/water.png'),
+    ('restroom',
+     'restroom',
+     'https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png')
 )
 
 sql_con = sqlite3.connect("C:/Users/Chris/Pictures/Lightroom/Photos.lrcat")
@@ -22,7 +39,7 @@ with open('facilities.kml', 'w') as w:
     <description>Chris Nelson's Bay Area park facilities</description>
     <Folder>
       <open>1</open>
-      <name>Picnic Tables</name>
+      <name>Bay Area hiking facilities</name>
 ''')
 
     for icon in icons:
