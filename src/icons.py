@@ -1,7 +1,7 @@
 import os
 
 class Icons:
-    def __init__(self):
+    def __init__(self, args):
         # Discover which icon files are available in the icons directory.
         self.id = {} # tag set -> style ID
         self.url = {} # tag set -> url
@@ -11,7 +11,11 @@ class Icons:
             if pos > 0:
                 basename = filename[:pos]
                 tag_set = frozenset(basename.split('-'))
-                url = f'https://fred-rum.github.io/lightroom-gps-extractor/icons/{filename}'
+                if '-local-icons' in args:
+                    urlbase = 'C:/Users/Chris/Documents/GitHub/lightroom-gps-extractor/icons/'
+                else:
+                    urlbase = 'https://fred-rum.github.io/lightroom-gps-extractor/icons/'
+                url = urlbase + filename
                 self.id[tag_set] = basename
                 self.url[tag_set] = url
 

@@ -2,6 +2,7 @@
 #!/usr/bin/env python
 
 import sqlite3
+import sys
 
 # My files
 from cluster import *
@@ -22,16 +23,13 @@ sql_con = sqlite3.connect("file:C:/Users/Chris/Pictures/Lightroom/Photos.lrcat?m
 sql_con.row_factory = sqlite3.Row
 
 cluster = Cluster()
-icons = Icons()
+icons = Icons(sys.argv)
 
 with open('facilities.kml', 'w') as w:
     w.write('''<?xml version="1.0"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
   <Document>
-    <name>Chris Nelson's Bay Area park facilities</name>
-    <Folder>
-      <open>1</open>
-      <name>Bay Area hiking facilities</name>
+    <name>Chris Nelson's Bay Area hiking facilities</name>
 ''')
 
     for x in tag_data:
@@ -87,8 +85,7 @@ AND AgLibraryKeyword.lc_name = '{keyword}';""")
         w.write(f'        <Point><coordinates>{avg_coord.lon},{avg_coord.lat},0</coordinates></Point>\n')
         w.write('      </Placemark>\n')
 
-    w.write('''    </Folder>
-  </Document>
+    w.write('''  </Document>
 </kml>
 ''')
 
