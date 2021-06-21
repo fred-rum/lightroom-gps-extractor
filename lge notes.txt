@@ -63,3 +63,25 @@ bench
 log/boulder
 water
 restroom
+
+
+Separate coordinate clumping from KML writing.
+  The coordinate clumper emits a list of coordinate strings.
+  6 digits after the decimal gets to ~1 m accuracy,
+    so don't emit more.
+
+Clump all types of coordinates together while remembering which types
+are used in each clump.
+Using a canonical icon ordering, use Irfanview's command-line mode
+(as in BAWG/photo.py) to concatenate icons.
+Make the icon clump relatively square.  If not perfectly square:
+  Allow the middle rows to be 1 longer than the other rows and the columns.
+  If the number of longer rows rows vs. the total number of rows is odd/odd:
+    make the middle row longer and space out the other long rows above and below
+    with the shortest even spacing that will fit.
+  If it is even/even, make the two middle rows longer, etc.
+  If it is odd/even, make the row above middle longer.
+  If it is even/odd, make the middle row and the one above it longer.
+  Center the longer rows relative to the shorter rows,
+    or using padding between icons to justify them evenly.
+  E.g. 5 icons is 3-2; 11 icons is 4-3-4; 13 icons is 3-4-3-3

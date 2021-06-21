@@ -4,32 +4,25 @@
 import sqlite3
 
 # My files
-from group import *
+from cluster import *
+from icons import *
 
-# The icon data is a list of tuples, with each tuple as follows:
-#   tag: a safe XML ID
+# The keywords data is a list of tuples, with each tuple as follows:
+#   tag: a safe XML ID and the expected icon name
 #   keyword: as used in Lightroom
-#   href: a URL to an icon
-icons = (
-    ('table',
-     'table',
-     'https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png'),
-    ('bench',
-     'bench',
-     'https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png'),
-    ('seat',
-     'log/boulder',
-     'https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png'),
-    ('water',
-     'drinking fountain',
-     'https://fred-rum.github.io/lightroom-gps-extractor/icons/water.png'),
-    ('restroom',
-     'restroom',
-     'https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png')
+tag_data = (
+    ('restroom', 'restroom'),
+    ('table', 'table'),
+    ('bench', 'bench'),
+    ('seat', 'log/boulder'),
+    ('water', 'drinking fountain')
 )
 
-sql_con = sqlite3.connect("C:/Users/Chris/Pictures/Lightroom/Photos.lrcat")
+sql_con = sqlite3.connect("file:C:/Users/Chris/Pictures/Lightroom/Photos.lrcat?mode=ro", uri=True)
 sql_con.row_factory = sqlite3.Row
+
+cluster = Cluster()
+icons = Icons()
 
 with open('facilities.kml', 'w') as w:
     w.write('''<?xml version="1.0"?>
@@ -42,8 +35,8 @@ with open('facilities.kml', 'w') as w:
       <name>Bay Area hiking facilities</name>
 ''')
 
-    for icon in icons:
-        (tag, keyword, href) = icon
+    for x in tag_data:
+        (tag, keyword) = x
 
         sql_results = sql_con.execute(f"""SELECT
 AgHarvestedExifMetadata.gpsLatitude as 'latitude',
@@ -60,12 +53,36 @@ AND AgLibraryKeywordImage.image = Adobe_images.id_local
 AND AgLibraryKeywordImage.tag = AgLibraryKeyword.id_local
 AND AgLibraryKeyword.lc_name = '{keyword}';""")
 
-        group = Group(tag, href, sql_results)
-        group.write(w)
+        for r in sql_results:
+            cluster.add_coord(tag, r['latitude'], r['longitude'])
 
-    w.write('''    </Folder>
-  </Document>
-</kml>
+    id_set = set()
+    for avg_coord in cluster.avg_coords:
+        w.write('      <Placemark>\n')
+
+        id = icons.get_id(avg_coord.tags)
+        if not id:
+            print(f'Need icon for {avg_coord.tags}')
+        elif id not in id_set:
+            url = icons.get_url(avg_coord.tags)
+            w.write(f"""        <Style id="{id}">
+      <IconStyle>
+        <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
+        <Icon>
+          <href>{url}</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+""")
+            id_set.add(id)
+        else:
+            w.write(f'        <styleUrl>#{id}</styleUrl>\n')
+        w.write(f'        <Point><coordinates>{avg_coord.lon},{avg_coord.lat},0</coordinates></Point>\n')
+        w.write('      </Placemark>\n')
+
+        w.write('''    </Folder>
+      </Document>
+    </kml>
 ''')
 
 sql_con.close()
