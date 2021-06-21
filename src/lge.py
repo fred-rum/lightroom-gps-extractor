@@ -29,7 +29,6 @@ with open('facilities.kml', 'w') as w:
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
   <Document>
     <name>Chris Nelson's Bay Area park facilities</name>
-    <description>Chris Nelson's Bay Area park facilities</description>
     <Folder>
       <open>1</open>
       <name>Bay Area hiking facilities</name>
@@ -67,7 +66,15 @@ AND AgLibraryKeyword.lc_name = '{keyword}';""")
             url = icons.get_url(avg_coord.tags)
             w.write(f"""        <Style id="{id}">
       <IconStyle>
-        <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
+""")
+
+            # Caltopo doesn't support <scale>, which is unfortunately.
+            # But I go ahead and emit it in case I'm using the KML with
+            # Google Earth, which does support it.
+            if '-' in id:
+                w.write(f'        <scale>1.95</scale>\n')
+
+            w.write(f"""        <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
         <Icon>
           <href>{url}</href>
         </Icon>
@@ -80,9 +87,9 @@ AND AgLibraryKeyword.lc_name = '{keyword}';""")
         w.write(f'        <Point><coordinates>{avg_coord.lon},{avg_coord.lat},0</coordinates></Point>\n')
         w.write('      </Placemark>\n')
 
-        w.write('''    </Folder>
-      </Document>
-    </kml>
+    w.write('''    </Folder>
+  </Document>
+</kml>
 ''')
 
 sql_con.close()

@@ -2,10 +2,20 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
   <Document>
     <name>Chris Nelson's Bay Area park facilities</name>
-    <description>Chris Nelson's Bay Area park facilities</description>
     <Folder>
       <open>1</open>
       <name>Bay Area hiking facilities</name>
+      <Placemark>
+        <Style id="restroom">
+      <IconStyle>
+        <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
+        <Icon>
+          <href>https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+        <Point><coordinates>-122.07289744,37.30406258,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <Style id="bench">
       <IconStyle>
@@ -17,191 +27,114 @@
     </Style>
         <Point><coordinates>-122.18082504,37.32691539,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.59875339,37.90698214,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#restroom</styleUrl>
+        <Point><coordinates>-122.62675842,37.92343726,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.05186424,37.02309547,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.79140147999999,37.408714065,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.15469248,37.27302272,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.17440078,37.82106816,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#restroom</styleUrl>
+        <Point><coordinates>-121.52249815,37.1783498,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.16051874,37.2787667,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.09597958,37.0674714,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.20528493,37.35018927,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.90171714,37.00176261,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-121.86438014,37.46554784,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.05979824,37.29166393,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.26899084,37.40189735,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#restroom</styleUrl>
+        <Point><coordinates>-121.42934507,37.12331354,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-121.5476369,37.09453494,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.42671842,37.13790081,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.18629414,37.3598799,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#restroom</styleUrl>
+        <Point><coordinates>-122.45838604,37.60575315,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.72963454,37.16868776,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.3321428,37.19820446,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.73075923,37.1672803,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.33757148,37.19939061,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.73450161,37.16319045,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.8068810772225,37.405516402777494,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.19161104,37.35800519,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.93724423,36.63521453,0</coordinates></Point>
+        <Point><coordinates>-121.73863424,37.16584703,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.63006836,37.92457977,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.45637826000001,37.09173591,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.70110025,37.37682375,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.70565212,37.38007508,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.68661456,37.3467013,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.69085389,37.31873574,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.8105,37.51124,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.52788534,37.18251091,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.54231092,37.18667299,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.54598705,37.18865258,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <Style id="table-bench">
-      <IconStyle>
-        <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
-        <Icon>
-          <href>https://fred-rum.github.io/lightroom-gps-extractor/icons/table-bench.png</href>
-        </Icon>
-      </IconStyle>
-    </Style>
-        <Point><coordinates>-122.197465545,37.857152424999995,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.19527119,37.85601118,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.46492266,37.575981235,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.18988924,37.85083157,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <Style id="table">
       <IconStyle>
@@ -211,459 +144,368 @@
         </Icon>
       </IconStyle>
     </Style>
-        <Point><coordinates>-121.85260789,37.18132383,0</coordinates></Point>
+        <Point><coordinates>-159.68764827,22.14710618,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.19138163,37.84774669,0</coordinates></Point>
+        <Point><coordinates>-121.93724423,36.63521453,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.90298704,37.6278583,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.67894151,37.30886435,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#table</styleUrl>
-        <Point><coordinates>-122.30133681,37.44473237,0</coordinates></Point>
+        <Point><coordinates>-159.65636193,22.102635284999998,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <Style id="restroom">
-      <IconStyle>
-        <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
-        <Icon>
-          <href>https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png</href>
-        </Icon>
-      </IconStyle>
-    </Style>
-        <Point><coordinates>-121.41874916,37.09275851,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.193968755,37.842459524999995,0</coordinates></Point>
+        <Point><coordinates>-122.63006836,37.92457977,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.29311724,37.34025341,0</coordinates></Point>
+        <Point><coordinates>-121.6898634,37.31768443,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#restroom</styleUrl>
-        <Point><coordinates>-122.07441993,37.28345508,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#restroom</styleUrl>
-        <Point><coordinates>-122.07289744,37.30406258,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.21058725,37.35532933,0</coordinates></Point>
+        <Point><coordinates>-121.70110025,37.37682375,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-122.10139563,36.96378508,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.539525465,37.185765515,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#restroom</styleUrl>
-        <Point><coordinates>-122.62675842,37.92343726,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-122.0702468,37.23085422,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.59875339,37.90698214,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-122.09395892,37.00079861,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.47386093,37.57503632,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.85265565,37.18022851,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.79140147999999,37.408714065,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.17440078,37.82106816,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.46646785,37.56800076,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#restroom</styleUrl>
-        <Point><coordinates>-121.52249815,37.1783498,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-122.2188347,37.19140992,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <Style id="restroom-table">
       <IconStyle>
+        <scale>1.95</scale>
         <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
         <Icon>
           <href>https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-table.png</href>
         </Icon>
       </IconStyle>
     </Style>
-        <Point><coordinates>-121.51630981,37.17422988,0</coordinates></Point>
+        <Point><coordinates>-121.47204525,37.101972375,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.77620251,37.40851159,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.09597958,37.0674714,0</coordinates></Point>
+        <Point><coordinates>-121.70565212,37.38007508,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-122.21466885,38.03819169,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.68661456,37.3467013,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.79956264,37.18425389,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-122.21338647,38.02360925,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.87059242,37.19735496,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-122.21085722,38.02949566,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.69085389,37.31873574,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.84982374,37.17216636,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.86380185,37.4573224,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.8105,37.51124,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.77884835,37.20433415,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.52788534,37.18251091,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.54231092,37.18667299,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.069255065,37.280755185000004,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.07671788,37.28648691,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.88906001,37.61163937,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.54598705,37.18865258,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.078052575,37.290320980000004,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.76421319,37.17164975,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <Style id="table-bench">
+      <IconStyle>
+        <scale>1.95</scale>
+        <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
+        <Icon>
+          <href>https://fred-rum.github.io/lightroom-gps-extractor/icons/table-bench.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+        <Point><coordinates>-122.197465545,37.857152424999995,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.07484303000001,37.29963658,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.19527119,37.85601118,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.06135644,37.279716355000005,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.7807079,37.16644557,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.09815729,37.55789173,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.18988924,37.85083157,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.72589067,37.32437598,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-121.53425192,37.19044524,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.19138163,37.84774669,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.28447956,37.46611384,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.45894696,37.07364963,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-122.30133681,37.44473237,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.46506224,37.57894222,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#restroom</styleUrl>
+        <Point><coordinates>-121.41874916,37.09275851,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#restroom-table</styleUrl>
+        <Point><coordinates>-121.466080885,37.075962105,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.193968755,37.842459524999995,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.29311724,37.34025341,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.46620503,37.57725433,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.84031356,37.17888052,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#restroom</styleUrl>
+        <Point><coordinates>-122.07441993,37.28345508,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.85260789,37.18132383,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.21058725,37.35532933,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.46492266,37.575981235,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-121.71281666666667,37.00159166666667,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-122.10139563,36.96378508,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.539525465,37.185765515,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-122.0702468,37.23085422,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.47386093,37.57503632,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-122.09395892,37.00079861,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.85265565,37.18022851,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#bench</styleUrl>
+        <Point><coordinates>-122.46646785,37.56800076,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-122.2188347,37.19140992,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#restroom-table</styleUrl>
+        <Point><coordinates>-121.51630981,37.17422988,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.52652099,37.18176072,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-122.09220443,37.00285195,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.20528493,37.35018927,0</coordinates></Point>
+        <Point><coordinates>-122.46481901666665,37.573905226666675,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.46481901666668,37.57390522666667,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-122.090549315,36.977741664999996,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.90171714,37.00176261,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.682745,37.00814,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table-bench</styleUrl>
         <Point><coordinates>-121.70200750000001,37.00038833333333,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.05979824,37.29166393,0</coordinates></Point>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.682745,37.00814,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.17367372000001,37.30751853,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.68438333333333,37.01488166666667,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-121.791733105,37.162315675,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#restroom</styleUrl>
-        <Point><coordinates>-121.429105975,37.123198939999995,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
-        <Point><coordinates>-122.19060811,37.85262312,0</coordinates></Point>
+        <Point><coordinates>-121.68438333333333,37.01488166666667,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-121.84230594,37.18536702,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-122.19060811,37.85262312,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.715945,37.01063833333333,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-119.78855235,37.94347425,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.42735961,37.13816496,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-121.5664621,37.11159499,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#restroom</styleUrl>
-        <Point><coordinates>-122.45838604,37.60575315,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
-        <Point><coordinates>-122.60263656,37.90386704,0</coordinates></Point>
+        <Point><coordinates>-119.78855235,37.94347425,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.72963454,37.16868776,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-121.79218765499999,37.16012602,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
-        <Point><coordinates>-122.07417583,37.53256239,0</coordinates></Point>
+        <Point><coordinates>-122.60263656,37.90386704,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.45366091,37.61116377,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-122.07417583,37.53256239,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.77998202,37.40676181,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.73075923,37.1672803,0</coordinates></Point>
+        <styleUrl>#table-bench</styleUrl>
+        <Point><coordinates>-121.45636446,37.091709965,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.80336291500001,37.175843045,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.76966354,37.38906089,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.73450161,37.16319045,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.78704395,37.172187975,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-159.68764827,22.14710618,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-122.16400655,37.81762173,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.457050586,37.078314279999994,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.73863424,37.16584703,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.79317267666666,37.157326043333335,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <Style id="seat">
-      <IconStyle>
-        <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
-        <Icon>
-          <href>https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png</href>
-        </Icon>
-      </IconStyle>
-    </Style>
-        <Point><coordinates>-121.54634926,37.2021847,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <Style id="water">
       <IconStyle>
@@ -675,482 +517,169 @@
     </Style>
         <Point><coordinates>-122.41220088,37.58975381,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-122.16400655,37.81762173,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.45736489000001,37.078193544,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.79317267666666,37.157326043333335,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <Style id="seat">
+      <IconStyle>
+        <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
+        <Icon>
+          <href>https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+        <Point><coordinates>-121.54634926,37.2021847,0</coordinates></Point>
+      </Placemark>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.80931023,37.39988463,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.90298704,37.6278583,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#seat</styleUrl>
         <Point><coordinates>-121.52414975,37.19257714,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-159.65636193,22.102635284999998,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.77354928,37.21446035,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.67894151,37.30886435,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.6898634,37.31768443,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#seat</styleUrl>
         <Point><coordinates>-121.54438164,37.19788589,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#seat</styleUrl>
         <Point><coordinates>-121.52053522,37.19127019,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.22358577,37.36956267,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.45539034,37.09299243,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#restroom-table</styleUrl>
-        <Point><coordinates>-121.47204525,37.101972375,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.22929398,37.3623105,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.77620251,37.40851159,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#restroom-table</styleUrl>
-        <Point><coordinates>-121.42453635,37.132899179999995,0</coordinates></Point>
+        <Point><coordinates>-121.425846975,37.135063975,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.30057901,37.44380898,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-122.21466885,38.03819169,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#restroom-table</styleUrl>
-        <Point><coordinates>-121.477706945,37.13562129,0</coordinates></Point>
+        <Point><coordinates>-121.47825868000001,37.138346415,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#seat</styleUrl>
         <Point><coordinates>-121.51342988,37.16638576,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.73941343,37.17076594,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.31138875,37.43441926,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.79956264,37.18425389,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-122.21338647,38.02360925,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#seat</styleUrl>
         <Point><coordinates>-121.90927515999999,37.62924631,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.87059242,37.19735496,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-122.21085722,38.02949566,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#seat</styleUrl>
         <Point><coordinates>-121.98729066,37.20310794,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.728928155,37.17116838,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-121.9973205,37.006242195,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.84982374,37.17216636,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-121.99917767,37.00454074,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.86380185,37.4573224,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#seat</styleUrl>
         <Point><coordinates>-121.50521449666667,37.18167232333334,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.77884835,37.20433415,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#seat</styleUrl>
         <Point><coordinates>-122.07509139,37.23697648,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.891291535,37.615071595,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.89955566,37.62398965,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-121.44736309,37.11184754,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.069255065,37.280755185000004,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.88906001,37.61163937,0</coordinates></Point>
+        <Point><coordinates>-121.89955566,37.62398965,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.19709284,37.31681046,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.07671788,37.28648691,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.80118436,37.16489464,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.76421319,37.17164975,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.078052575,37.290320980000004,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.07484303000001,37.29963658,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#water</styleUrl>
-        <Point><coordinates>-122.27858252,37.47359302,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.7807079,37.16644557,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.108704165,37.22828048,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.06135644,37.279716355000005,0</coordinates></Point>
+        <styleUrl>#water</styleUrl>
+        <Point><coordinates>-122.27858252,37.47359302,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-122.11076903,37.2287213,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.09815729,37.55789173,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.72589067,37.32437598,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.53425192,37.19044524,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.83262711666667,37.182960099999995,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.45894696,37.07364963,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.83816527,37.18299449,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.28447956,37.46611384,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#restroom-table</styleUrl>
-        <Point><coordinates>-121.466080885,37.075962105,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.54746143,37.098414425,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#bench</styleUrl>
         <Point><coordinates>-121.77836103,37.40929975,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.46506224,37.57894222,0</coordinates></Point>
+        <styleUrl>#table</styleUrl>
+        <Point><coordinates>-121.54746143,37.098414425,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.79291445,37.15842894,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-122.46620503,37.57725433,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#table</styleUrl>
-        <Point><coordinates>-121.84031356,37.17888052,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.5470737,37.20293958,0</coordinates></Point>
       </Placemark>
-    </Folder>
-      </Document>
-    </kml>
       <Placemark>
         <styleUrl>#table</styleUrl>
         <Point><coordinates>-121.51972185,37.17705001,0</coordinates></Point>
       </Placemark>
     </Folder>
-      </Document>
-    </kml>
-      <Placemark>
-        <styleUrl>#bench</styleUrl>
-        <Point><coordinates>-121.8068810772225,37.405516402777494,0</coordinates></Point>
-      </Placemark>
-    </Folder>
-      </Document>
-    </kml>
+  </Document>
+</kml>
