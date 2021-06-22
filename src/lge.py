@@ -3,6 +3,7 @@
 
 import sqlite3
 import sys
+import re
 
 # My files
 from cluster import *
@@ -12,6 +13,7 @@ from icons import *
 #   tag: a safe XML ID and the expected icon name
 #   keyword: as used in Lightroom
 tag_data = (
+    ('parking', 'parking'),
     ('restroom', 'restroom'),
     ('table', 'table'),
     ('bench', 'bench'),
@@ -24,18 +26,13 @@ sql_con.row_factory = sqlite3.Row
 
 cluster = Cluster()
 icons = Icons(sys.argv)
+supported_tags = set()
 
-with open('facilities.kml', 'w') as w:
-    w.write('''<?xml version="1.0"?>
-<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
-  <Document>
-    <name>Chris Nelson's Bay Area hiking facilities</name>
-''')
+for x in tag_data:
+    (tag, keyword) = x
+    supported_tags.add(tag)
 
-    for x in tag_data:
-        (tag, keyword) = x
-
-        sql_results = sql_con.execute(f"""SELECT
+    sql_results = sql_con.execute(f"""SELECT
 AgHarvestedExifMetadata.gpsLatitude as 'latitude',
 AgHarvestedExifMetadata.gpsLongitude as 'longitude'
 FROM
@@ -50,8 +47,39 @@ AND AgLibraryKeywordImage.image = Adobe_images.id_local
 AND AgLibraryKeywordImage.tag = AgLibraryKeyword.id_local
 AND AgLibraryKeyword.lc_name = '{keyword}';""")
 
-        for r in sql_results:
-            cluster.add_coord(tag, r['latitude'], r['longitude'])
+    for r in sql_results:
+        cluster.add_coord(tag, r['latitude'], r['longitude'])
+
+tags_used = True
+with open('data/points.txt', 'r') as f:
+    for index, line in enumerate(f):
+        line = line.strip()
+
+        # Look for <latitude>, <longitude> <optional comment>
+        matchobj = re.match(r'(-?[0-9]+\.?[0-9]*)\s*,\s*(-?[0-9]+\.?[0-9]*)(?:\s+(.*?))?$', line)
+        if matchobj and tags:
+            for tag in tags:
+                lat = float(matchobj[1])
+                lon = float(matchobj[2])
+                cluster.add_coord(tag, lat, lon)
+            tags_used = True
+        elif line in supported_tags:
+            if tags_used:
+                tags = set()
+                tags_used = False
+            tags.add(line)
+        elif line == '':
+            # skip blank lines (including the one followed by EOF)
+            pass
+        else:
+            print(f'Unrecognized line {index} in data/points.txt: {line}')
+
+with open('facilities.kml', 'w') as w:
+    w.write('''<?xml version="1.0"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+  <Document>
+    <name>Chris Nelson's Bay Area hiking facilities</name>
+''')
 
     id_set = set()
     for avg_coord in cluster.avg_coords:
