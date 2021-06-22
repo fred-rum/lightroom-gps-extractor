@@ -86,5 +86,12 @@ Make the icon clump relatively square.  If not perfectly square:
     or using padding between icons to justify them evenly.
   E.g. 5 icons is 3-2; 11 icons is 4-3-4; 13 icons is 3-4-3-3
 
-Add buffering around single icons, and give them all a scale.
-  When importing to CalTopo and exporting to PDF, use the Icons 2x option.
+x Add buffering around single icons, and give them all a scale.
+x   When importing to CalTopo and exporting to PDF, use the Icons 2x option.
+
+Instead of combining icons into a single image, add them separately to
+  the KML along with appropriate placement offsets to place them next to
+  each other.
+
+Sort avg_coords before emitting them so that the output order doesn't
+change every time.

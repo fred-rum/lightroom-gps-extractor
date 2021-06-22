@@ -21,6 +21,9 @@ tag_data = (
     ('water', 'drinking fountain')
 )
 
+###############################################################################
+# Read Lightroom SQL
+
 sql_con = sqlite3.connect("file:C:/Users/Chris/Pictures/Lightroom/Photos.lrcat?mode=ro", uri=True)
 sql_con.row_factory = sqlite3.Row
 
@@ -50,6 +53,12 @@ AND AgLibraryKeyword.lc_name = '{keyword}';""")
     for r in sql_results:
         cluster.add_coord(tag, r['latitude'], r['longitude'])
 
+sql_con.close()
+
+
+###############################################################################
+# Read data/points.txt
+
 tags_used = True
 with open('data/points.txt', 'r') as f:
     for index, line in enumerate(f):
@@ -74,6 +83,13 @@ with open('data/points.txt', 'r') as f:
         else:
             print(f'Unrecognized line {index} in data/points.txt: {line}')
 
+
+###############################################################################
+# Write KML
+#
+# CalTopo ignores the icon scale in KML.
+# But Google Earth handles it correctly.
+
 with open('facilities.kml', 'w') as w:
     w.write('''<?xml version="1.0"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
@@ -94,11 +110,11 @@ with open('facilities.kml', 'w') as w:
       <IconStyle>
 """)
 
-            # Caltopo doesn't support <scale>, which is unfortunately.
+            # Caltopo doesn't support <scale>, which is unfortunate.
             # But I go ahead and emit it in case I'm using the KML with
             # Google Earth, which does support it.
             if '-' in id:
-                w.write(f'        <scale>1.95</scale>\n')
+                w.write(f'        <scale>2</scale>\n')
 
             w.write(f"""        <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
         <Icon>
@@ -117,4 +133,35 @@ with open('facilities.kml', 'w') as w:
 </kml>
 ''')
 
-sql_con.close()
+
+###############################################################################
+# Write GeoJSON
+#
+# CalTopo reads the scale (marker-size) correctly in GeoJSON format.
+# But Google Earth can't read GeoJSON.
+
+with open('facilities.json', 'w') as w:
+    w.write('{"features":\n')
+    w.write(' [\n')
+
+    first = True
+    for avg_coord in cluster.avg_coords:
+        id = icons.get_id(avg_coord.tags)
+        if id:
+            if first:
+                first = False
+            else:
+                w.write('  },\n')
+            w.write('  {"geometry":\n')
+            w.write(f'   {{"coordinates": [{avg_coord.lon},{avg_coord.lat},0,0], "type":"Point"}},\n')
+            w.write('   "properties": {\n')
+            if '-' in id:
+                w.write('    "marker-size":2,\n')
+            url = icons.get_url(avg_coord.tags)
+            w.write(f'    "marker-symbol": "{url}"\n')
+            w.write('   }\n')
+
+    w.write('  }\n')
+    w.write(' ],\n')
+    w.write(' "type": "FeatureCollection"\n')
+    w.write('}\n')

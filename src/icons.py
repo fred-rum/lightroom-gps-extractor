@@ -28,4 +28,7 @@ class Icons:
 
     def get_url(self, tag_set):
         f_set = frozenset(tag_set)
-        return self.url[f_set]
+        if f_set in self.id:
+            return self.url[f_set]
+        else:
+            return None
