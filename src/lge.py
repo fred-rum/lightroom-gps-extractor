@@ -4,6 +4,8 @@
 import sqlite3
 import sys
 import re
+import io
+import zipfile
 
 # My files
 from cluster import *
@@ -93,56 +95,89 @@ with open('data/points.txt', 'r') as f:
 
 ###############################################################################
 # Write KML
-#
-# CalTopo ignores the icon scale in KML.
-# But Google Earth handles it correctly.
 
-with open('facilities.kml', 'w') as w:
+def write_kml(w, relative=False):
     w.write('''<?xml version="1.0"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
   <Document>
     <name>Chris Nelson's Bay Area hiking facilities</name>
 ''')
 
+    # Google Earth allows a placemark style to be defined inline with
+    # its first usage, but Avenza Maps can't handle that.  So we define
+    # all styles first, then list the placemark locations.
     id_set = set()
     for avg_coord in cluster.avg_coords:
-        w.write('      <Placemark>\n')
-
         for fold in fold_tags:
             if fold[0] in avg_coord.tags:
                 avg_coord.tags.discard(fold[1])
 
         id = icons.get_id(avg_coord.tags)
-        if not id:
-            print(f'Need icon for {avg_coord.tags}')
-        elif id not in id_set:
-            url = icons.get_url(avg_coord.tags)
-            w.write(f"""        <Style id="{id}">
+        if id and id not in id_set:
+            id_set.add(id)
+            url = icons.get_url(avg_coord.tags, relative)
+            w.write(f"""    <Style id="{id}">
       <IconStyle>
 """)
 
-            # Caltopo doesn't support <scale>, which is unfortunate.
+            # The <scale> expands the grouped icon so that it is twice as big
+            # rather than just double the resolution.
+            #
+            # Avenza Maps doesn't support <scale>, which is unfortunate.
             # But I go ahead and emit it in case I'm using the KML with
             # Google Earth, which does support it.
+            #
+            # CalTopo also doesn't support the KML scale, but it supports
+            # scale in GeoJSON, which we write separately.
             if '-' in id:
                 w.write(f'        <scale>2</scale>\n')
-
-            w.write(f"""        <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
-        <Icon>
+            w.write(f"""        <Icon>
           <href>{url}</href>
         </Icon>
       </IconStyle>
     </Style>
 """)
-            id_set.add(id)
-        else:
-            w.write(f'        <styleUrl>#{id}</styleUrl>\n')
-        w.write(f'        <Point><coordinates>{avg_coord.lon},{avg_coord.lat},0</coordinates></Point>\n')
-        w.write('      </Placemark>\n')
+
+    for avg_coord in cluster.avg_coords:
+        w.write('    <Placemark>\n')
+
+        id = icons.get_id(avg_coord.tags)
+        w.write(f'      <styleUrl>#{id}</styleUrl>\n')
+        w.write(f'      <Point><coordinates>{avg_coord.lon},{avg_coord.lat},0</coordinates></Point>\n')
+        w.write('    </Placemark>\n')
 
     w.write('''  </Document>
 </kml>
 ''')
+
+    # Knowing which icons were used is useful when writing a KMZ file.
+    return id_set
+
+with open('facilities.kml', 'w') as w:
+    write_kml(w, relative=False)
+
+
+###############################################################################
+# Write KMZ
+#
+# Collect the KML file and PNG icons into a single KMZ file
+
+# Either the Python support for directly writing into a ZIP file is awkward
+# or the documentation is particularly terrible (or both).  The only way I've
+# figured out how to do it is to extract the bytes from io.StringIO
+
+s = io.StringIO()
+id_set = write_kml(s, relative=True)
+
+with zipfile.ZipFile('facilities.kmz', mode='w') as archive:
+    archive.writestr('facilities.kml', s.getvalue())
+
+    file_set = set()
+    for avg_coord in cluster.avg_coords:
+        filename = icons.get_url(avg_coord.tags, relative=True)
+        if filename and filename not in file_set:
+            file_set.add(filename)
+            archive.write(filename)
 
 
 ###############################################################################
