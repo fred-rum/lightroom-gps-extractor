@@ -1,3 +1,3 @@
 parking
 37.810528, -122.193278 Joaquin Miller Park
-
+37.816115, -122.201804 between Joaquin Miller Park and Dimond Canyon

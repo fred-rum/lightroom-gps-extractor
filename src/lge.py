@@ -21,6 +21,13 @@ tag_data = (
     ('water', 'drinking fountain')
 )
 
+# If the first tag is present, the second tag is supercilious and discarded.
+fold_tags = (
+    ('bench', 'seat'),
+    ('table', 'bench'),
+    ('table', 'seat')
+)
+
 ###############################################################################
 # Read Lightroom SQL
 
@@ -100,6 +107,10 @@ with open('facilities.kml', 'w') as w:
     id_set = set()
     for avg_coord in cluster.avg_coords:
         w.write('      <Placemark>\n')
+
+        for fold in fold_tags:
+            if fold[0] in avg_coord.tags:
+                avg_coord.tags.discard(fold[1])
 
         id = icons.get_id(avg_coord.tags)
         if not id:
