@@ -1,1309 +1,105 @@
 {"features":
  [
   {"geometry":
-   {"coordinates": [-122.07441993,37.28345508,0,0], "type":"Point"},
+   {"coordinates": [-122.214669,38.038192,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.210857,38.029496,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.213386,38.023609,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-119.788552,37.943474,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.613312,37.925358,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.630068,37.924580,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.626758,37.923437,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
    }
   },
   {"geometry":
-   {"coordinates": [-122.46507619666666,37.57552375111111,0,0], "type":"Point"},
+   {"coordinates": [-122.598753,37.906982,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
    }
   },
   {"geometry":
-   {"coordinates": [-122.465791195,37.578960085000006,0,0], "type":"Point"},
+   {"coordinates": [-122.602637,37.903867,0,0], "type":"Point"},
    "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.07289744,37.30406258,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.47076723,37.57981942,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.88906001,37.61163937,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.62675842,37.92343726,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.47952256,37.57690676,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.76421319,37.17164975,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.84230594,37.18536702,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.52249815,37.1783498,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.5664621,37.11159499,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.48365139,37.574122765,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.72589067,37.32437598,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.48137421,37.57196057,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.79218765499999,37.16012602,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.45366091,37.61116377,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.4783417,37.57460134,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.45894696,37.07364963,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.45636446,37.091709965,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.90923076,37.00806494,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.466080885,37.075962105,0,0], "type":"Point"},
-   "properties": {
-    "marker-size":2,
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.79175806,37.16239693333333,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.90400036,37.001158175,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.42934507,37.12331354,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.806918795,37.398005835000006,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.84031356,37.17888052,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.17782565,37.3242167,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.82076698,37.39423679,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.45838604,37.60575315,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.85260789,37.18132383,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.17410292333334,37.307362383333334,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.184078965,37.309040960000004,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.18311114,37.81074446,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.10139563,36.96378508,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.09435182,37.56035409,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.18143587,37.81588716,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.09395892,37.00079861,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.09468078,37.55398009,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.17705991,37.31220378,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.41874916,37.09275851,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.095074575,37.5510347,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.17616333,37.31002669,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.51630981,37.17422988,0,0], "type":"Point"},
-   "properties": {
-    "marker-size":2,
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.27443114,37.39574363,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.52652099,37.18176072,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.18001550666666,37.36609729666666,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.27378759666668,37.403042776666666,0,0], "type":"Point"},
-   "properties": {
-    "marker-size":2,
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.17216158,37.369006830000004,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.08534168,37.55111917,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.285089545,37.466244274999994,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.2788441,37.46381638,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.17145686,37.36768,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.19060811,37.85262312,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.31576562,37.44350663,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.83422641,37.18890587,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-119.78855235,37.94347425,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.31884177,37.43994236,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.53235136,37.07424235,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.54098186,37.086112,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.60263656,37.90386704,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.31628162,37.43384926,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.53524282000001,37.080368145,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.77998202,37.40676181,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.21231662,37.25575319,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.76966354,37.38906089,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.80058786,37.39347836,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-159.48008524,22.19132965,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-159.68764827,22.14710618,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.16400655,37.81762173,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.79669014000001,37.397217175,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-159.4772259,22.19822431,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.80931023,37.39988463,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.00155703,37.60818915,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.01954723,37.61775678,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.77343005,37.21399579,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.792316405,37.403553265,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.02798554,37.62204216,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.47204525,37.101972375,0,0], "type":"Point"},
-   "properties": {
-    "marker-size":2,
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.77620251,37.40851159,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.793605965,37.401097667500004,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.425846975,37.135063975,0,0], "type":"Point"},
-   "properties": {
-    "marker-size":2,
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.21466885,38.03819169,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.47825868000001,37.138346415,0,0], "type":"Point"},
-   "properties": {
-    "marker-size":2,
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.058541,37.293149725,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.73941343,37.17076594,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.69452277,37.01903685,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.21338647,38.02360925,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.71577136,37.01070945111111,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.30669729499999,37.509646149999995,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.21085722,38.02949566,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.71278264833333,37.001615013333335,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.728928155,37.17116838,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.70149002000001,37.00047678888889,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.30133681,37.44473237,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.86380185,37.4573224,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.99918187,37.004568775,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.317401605,37.508765069999995,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.31208175,37.507551050000004,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.16051874,37.2787667,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.474508655,37.574843795,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.891291535,37.615071595,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.30343542,37.50368275,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.89955566,37.62398965,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.52764671,37.0711692,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.20528493,37.35018927,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.30213681,37.50281077,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.86438014,37.46554784,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.80118436,37.16489464,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.05979824,37.29166393,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.83274365,37.52393437,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.26899084,37.40189735,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.81859878,37.53083652,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.79807503,37.14482059,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.5476369,37.09453494,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.42671842,37.13790081,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.28033138500001,37.46889666,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.02797517,37.62626067,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.18629414,37.3598799,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.16679863,37.34833691,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.72963454,37.16868776,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.83262711666667,37.182960099999995,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.15022257,37.342456490000004,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.3321428,37.19820446,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.83816527,37.18299449,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.73075923,37.1672803,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.78087479999999,37.166415485,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.33757148,37.19939061,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.54746143,37.098414425,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.69453771,37.2121524,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.09597958,37.0674714,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.73450161,37.16319045,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.79291445,37.15842894,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.19161104,37.35800519,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.16266901,37.34757281,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.73863424,37.16584703,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.5470737,37.20293958,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.93724423,36.63521453,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.90298704,37.6278583,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.51972185,37.17705001,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.41220088,37.58975381,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/water.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.67894151,37.30886435,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.54634926,37.2021847,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.539525465,37.185765515,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.63006836,37.92457977,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.6898634,37.31768443,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.0702468,37.23085422,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.54438164,37.19788589,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.52414975,37.19257714,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.22358577,37.36956267,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.70110025,37.37682375,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.85265565,37.18022851,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.22929398,37.3623105,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.52053522,37.19127019,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.70565212,37.38007508,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.2188347,37.19140992,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.30057901,37.44380898,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.68661456,37.3467013,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.79956264,37.18425389,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.09220443,37.00285195,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.31138875,37.43441926,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.87059242,37.19735496,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.51342988,37.16638576,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.090549315,36.977741664999996,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.682745,37.00814,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.69085389,37.31873574,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.84982374,37.17216636,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.90927515999999,37.62924631,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.68438333333333,37.01488166666667,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.98729066,37.20310794,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.8105,37.51124,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.77884835,37.20433415,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.52788534,37.18251091,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.50521449666667,37.18167232333334,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.44736309,37.11184754,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.07509139,37.23697648,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.54231092,37.18667299,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.069255065,37.280755185000004,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.19709284,37.31681046,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.07671788,37.28648691,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.21125973,37.813858929999995,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.07417583,37.53256239,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.54598705,37.18865258,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.9982100775,37.006107920000005,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.078052575,37.290320980000004,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.90832274,36.99382285,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.80336291500001,37.175843045,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.197465545,37.857152424999995,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.07484303000001,37.29963658,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.108704165,37.22828048,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.19527119,37.85601118,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.06135644,37.279716355000005,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.78704395,37.172187975,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.11076903,37.2287213,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.09815729,37.55789173,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.45736489000001,37.078193544,0,0], "type":"Point"},
-   "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.18988924,37.85083157,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
    }
   },
   {"geometry":
-   {"coordinates": [-121.79317267666666,37.157326043333335,0,0], "type":"Point"},
+   {"coordinates": [-122.197466,37.857152,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
    }
   },
   {"geometry":
-   {"coordinates": [-121.53425192,37.19044524,0,0], "type":"Point"},
+   {"coordinates": [-122.195271,37.856011,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
    }
   },
   {"geometry":
-   {"coordinates": [-122.1840844,37.81150049,0,0], "type":"Point"},
+   {"coordinates": [-122.190608,37.852623,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.19138163,37.84774669,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.27858252,37.47359302,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/water.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-121.77836103,37.40929975,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.08975406,37.54875762,0,0], "type":"Point"},
-   "properties": {
-    "marker-size":2,
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-water-table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.14935707,37.80749918,0,0], "type":"Point"},
-   "properties": {
-    "marker-size":2,
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-water.png"
    }
   },
   {"geometry":
-   {"coordinates": [-122.193968755,37.842459524999995,0,0], "type":"Point"},
+   {"coordinates": [-122.189889,37.850832,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.0871238,37.55164159,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.18808231333334,37.31358629333334,0,0], "type":"Point"},
-   "properties": {
-    "marker-size":2,
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-water-table.png"
    }
   },
   {"geometry":
-   {"coordinates": [-122.29311724,37.34025341,0,0], "type":"Point"},
+   {"coordinates": [-122.191382,37.847747,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.17620357,37.361724306666666,0,0], "type":"Point"},
-   "properties": {
-    "marker-size":2,
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/water-bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.6133122,37.92535807,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
    }
   },
   {"geometry":
-   {"coordinates": [-121.8068810772225,37.405516402777494,0,0], "type":"Point"},
+   {"coordinates": [-122.193969,37.842460,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
    }
   },
   {"geometry":
-   {"coordinates": [-122.21058725,37.35532933,0,0], "type":"Point"},
+   {"coordinates": [-122.174401,37.821068,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
    }
   },
   {"geometry":
-   {"coordinates": [-121.90640165,36.98760603,0,0], "type":"Point"},
+   {"coordinates": [-122.164007,37.817622,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.18082504,37.32691539,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
-   }
-  },
-  {"geometry":
-   {"coordinates": [-122.59875339,37.90698214,0,0], "type":"Point"},
-   "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
    }
   },
   {"geometry":
@@ -1313,15 +109,27 @@
    }
   },
   {"geometry":
-   {"coordinates": [-159.65639376666667,22.102659513333332,0,0], "type":"Point"},
+   {"coordinates": [-122.181436,37.815887,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.211260,37.813859,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.184084,37.811500,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
    }
   },
   {"geometry":
-   {"coordinates": [-122.05186424,37.02309547,0,0], "type":"Point"},
+   {"coordinates": [-122.183111,37.810744,0,0], "type":"Point"},
    "properties": {
-    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
    }
   },
   {"geometry":
@@ -1331,37 +139,1229 @@
    }
   },
   {"geometry":
-   {"coordinates": [-121.79140147999999,37.408714065,0,0], "type":"Point"},
+   {"coordinates": [-122.149357,37.807499,0,0], "type":"Point"},
+   "properties": {
+    "marker-size":2,
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-water.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.909275,37.629246,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.902987,37.627858,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
    }
   },
   {"geometry":
-   {"coordinates": [-122.17453072,37.30830506,0,0], "type":"Point"},
+   {"coordinates": [-122.027975,37.626261,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
    }
   },
   {"geometry":
-   {"coordinates": [-122.15469248,37.27302272,0,0], "type":"Point"},
+   {"coordinates": [-121.899556,37.623990,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.027986,37.622042,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
    }
   },
   {"geometry":
-   {"coordinates": [-122.17440078,37.82106816,0,0], "type":"Point"},
+   {"coordinates": [-122.019547,37.617757,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
    }
   },
   {"geometry":
-   {"coordinates": [-122.46646785,37.56800076,0,0], "type":"Point"},
+   {"coordinates": [-121.891292,37.615072,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.889060,37.611639,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.453661,37.611164,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
    }
   },
   {"geometry":
-   {"coordinates": [-121.84118649,37.18979654,0,0], "type":"Point"},
+   {"coordinates": [-122.001557,37.608189,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.458386,37.605753,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.412201,37.589754,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/water.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.470767,37.579819,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.465791,37.578960,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.479523,37.576907,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.465076,37.575524,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.474509,37.574844,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.478342,37.574601,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.483651,37.574123,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.481374,37.571961,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.466468,37.568001,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.094352,37.560354,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.098157,37.557892,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.094681,37.553980,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.087124,37.551642,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.085342,37.551119,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.095075,37.551035,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.089754,37.548758,0,0], "type":"Point"},
+   "properties": {
+    "marker-size":2,
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-water-table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.074176,37.532562,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.818599,37.530837,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.832744,37.523934,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.810500,37.511240,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.306697,37.509646,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.317402,37.508765,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.312082,37.507551,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.303435,37.503683,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.302137,37.502811,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.278583,37.473593,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/water.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.280331,37.468897,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.285090,37.466244,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.864380,37.465548,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.278844,37.463816,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.863802,37.457322,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.301337,37.444732,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.300579,37.443809,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.315766,37.443507,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.318842,37.439942,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.311389,37.434419,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.316282,37.433849,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.778361,37.409300,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.791401,37.408714,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.776203,37.408512,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.779982,37.406762,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.806881,37.405516,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.792316,37.403553,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.273788,37.403043,0,0], "type":"Point"},
+   "properties": {
+    "marker-size":2,
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.268991,37.401897,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.793606,37.401098,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.809310,37.399885,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.806919,37.398006,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.796690,37.397217,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.274431,37.395744,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.820767,37.394237,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.800588,37.393478,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.769664,37.389061,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.705652,37.380075,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.701100,37.376824,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.223586,37.369563,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.172162,37.369007,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.171457,37.367680,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.180016,37.366097,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.229294,37.362310,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.176204,37.361724,0,0], "type":"Point"},
+   "properties": {
+    "marker-size":2,
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/water-bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.186294,37.359880,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.191611,37.358005,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.210587,37.355329,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.205285,37.350189,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.166799,37.348337,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.162669,37.347573,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.686615,37.346701,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.150223,37.342456,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.293117,37.340253,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.180825,37.326915,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.725891,37.324376,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.177826,37.324217,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.690854,37.318736,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.689863,37.317684,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.197093,37.316810,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.188082,37.313586,0,0], "type":"Point"},
+   "properties": {
+    "marker-size":2,
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-water-table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.177060,37.312204,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.176163,37.310027,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.184079,37.309041,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.678942,37.308864,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.174531,37.308305,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.174103,37.307362,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.072897,37.304063,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.074843,37.299637,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.058541,37.293150,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.059798,37.291664,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.078053,37.290321,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.076718,37.286487,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.074420,37.283455,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.069255,37.280755,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.061356,37.279716,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.160519,37.278767,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.154692,37.273023,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.212317,37.255753,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.075091,37.236976,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.070247,37.230854,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.110769,37.228721,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.108704,37.228280,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.773430,37.213996,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.694538,37.212152,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.778848,37.204334,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.987291,37.203108,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.547074,37.202940,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.546349,37.202185,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.337571,37.199391,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.332143,37.198204,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.544382,37.197886,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.870592,37.197355,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.524150,37.192577,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.218835,37.191410,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.520535,37.191270,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.534252,37.190445,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.841186,37.189797,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.834226,37.188906,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.545987,37.188653,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.542311,37.186673,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.539525,37.185766,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.842306,37.185367,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.799563,37.184254,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.838165,37.182994,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.832627,37.182960,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.527885,37.182511,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.526521,37.181761,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.505214,37.181672,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.852608,37.181324,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.852656,37.180229,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.840314,37.178881,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.522498,37.178350,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.519722,37.177050,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.803363,37.175843,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.516310,37.174230,0,0], "type":"Point"},
+   "properties": {
+    "marker-size":2,
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.787044,37.172188,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.849824,37.172166,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.764213,37.171650,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.728928,37.171168,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.739413,37.170766,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.729635,37.168688,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.730759,37.167280,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.780875,37.166415,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.513430,37.166386,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.738634,37.165847,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.801184,37.164895,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.734502,37.163190,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.791758,37.162397,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.792188,37.160126,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.792914,37.158429,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.793173,37.157326,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.798075,37.144821,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.478259,37.138346,0,0], "type":"Point"},
+   "properties": {
+    "marker-size":2,
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.426718,37.137901,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.425847,37.135064,0,0], "type":"Point"},
+   "properties": {
+    "marker-size":2,
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.429345,37.123314,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.447363,37.111848,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.566462,37.111595,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.472045,37.101972,0,0], "type":"Point"},
+   "properties": {
+    "marker-size":2,
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.547461,37.098414,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.547637,37.094535,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.418749,37.092759,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.456364,37.091710,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.540982,37.086112,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.535243,37.080368,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.457365,37.078194,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.466081,37.075962,0,0], "type":"Point"},
+   "properties": {
+    "marker-size":2,
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.532351,37.074242,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.458947,37.073650,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.527647,37.071169,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.095980,37.067471,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.051864,37.023095,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.694523,37.019037,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.684383,37.014882,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.715771,37.010709,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.682745,37.008140,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.909231,37.008065,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.998210,37.006108,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.999182,37.004569,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.092204,37.002852,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.712783,37.001615,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.904000,37.001158,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.093959,37.000799,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.701490,37.000477,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.908323,36.993823,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.906402,36.987606,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.090549,36.977742,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-122.101396,36.963785,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.937244,36.635215,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-159.477226,22.198224,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-159.480085,22.191330,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-159.687648,22.147106,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-159.656394,22.102660,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
    }
