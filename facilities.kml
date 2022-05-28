@@ -4,72 +4,67 @@
     <name>Chris Nelson's Bay Area hiking facilities</name>
     <Style id="table">
       <IconStyle>
-        <Icon><href>https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png</href></Icon>
+        <Icon><href>icons/table.png</href></Icon>
         <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
       </IconStyle>
     </Style>
     <Style id="bench">
       <IconStyle>
-        <Icon><href>https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png</href></Icon>
+        <Icon><href>icons/bench.png</href></Icon>
         <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
       </IconStyle>
     </Style>
     <Style id="restroom">
       <IconStyle>
-        <Icon><href>https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom.png</href></Icon>
+        <Icon><href>icons/restroom.png</href></Icon>
         <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
       </IconStyle>
     </Style>
     <Style id="parking">
       <IconStyle>
-        <Icon><href>https://fred-rum.github.io/lightroom-gps-extractor/icons/parking.png</href></Icon>
+        <Icon><href>icons/parking.png</href></Icon>
         <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
       </IconStyle>
     </Style>
     <Style id="restroom-water">
       <IconStyle>
-        <scale>2</scale>
-        <Icon><href>https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-water.png</href></Icon>
+        <Icon><href>icons/restroom-water-s.png</href></Icon>
         <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
       </IconStyle>
     </Style>
     <Style id="seat">
       <IconStyle>
-        <Icon><href>https://fred-rum.github.io/lightroom-gps-extractor/icons/seat.png</href></Icon>
+        <Icon><href>icons/seat.png</href></Icon>
         <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
       </IconStyle>
     </Style>
     <Style id="water">
       <IconStyle>
-        <Icon><href>https://fred-rum.github.io/lightroom-gps-extractor/icons/water.png</href></Icon>
+        <Icon><href>icons/water.png</href></Icon>
         <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
       </IconStyle>
     </Style>
     <Style id="restroom-water-table">
       <IconStyle>
-        <scale>2</scale>
-        <Icon><href>https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-water-table.png</href></Icon>
+        <Icon><href>icons/restroom-water-table-s.png</href></Icon>
         <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
       </IconStyle>
     </Style>
     <Style id="restroom-bench">
       <IconStyle>
-        <scale>2</scale>
-        <Icon><href>https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-bench.png</href></Icon>
+        <Icon><href>icons/restroom-bench-s.png</href></Icon>
         <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
       </IconStyle>
     </Style>
     <Style id="water-bench">
       <IconStyle>
-        <scale>2</scale>
-        <Icon><href>https://fred-rum.github.io/lightroom-gps-extractor/icons/water-bench.png</href></Icon>
+        <Icon><href>icons/water-bench-s.png</href></Icon>
         <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
       </IconStyle>
     </Style>
     <Style id="restroom-table">
       <IconStyle>
-        <scale>2</scale>
-        <Icon><href>https://fred-rum.github.io/lightroom-gps-extractor/icons/restroom-table.png</href></Icon>
+        <Icon><href>icons/restroom-table-s.png</href></Icon>
         <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction"/>
       </IconStyle>
     </Style>

@@ -152,56 +152,73 @@ with open('data/points.txt', 'r') as f:
 def by_lat(avg_coord):
     return -avg_coord.lat
 
-avg_coords = sorted(cluster.avg_coords, key=by_lat)
+coords = sorted(cluster.avg_coords, key=by_lat)
 
+for coord in coords:
+    for fold in fold_tags:
+        if fold[0] in coord.tags:
+            coord.tags.discard(fold[1])
+
+    # Create a sorted list of tags associated with the coordinate.
+    # We'll either create a cluster icons in this order or use a
+    # premade cluster icon that we expect to be named in this order.
+    coord.tag_list = []
+    for x in tag_data:
+        tag = x[0]
+        if tag in coord.tags:
+            coord.tag_list.append(tag)
 
 ###############################################################################
 # Write KML
 
-def write_style(w, tags, i, n, relative):
-    id = icons.get_id(tags)
-    url = icons.get_url(tags, relative)
+def combined_id(tag_list):
+    return '-'.join(tag_list)
+
+def write_style(w, id, i, n, relative, small_icons):
+    # default values; certain cases below change these values
+    style = id
+    icon = id
+    x = '0.5' # from left side of icon
+    y = '0.5' # from bottom of icon
+    scale = ''
+
+    if '-' in id:
+        if small_icons:
+            # When <scale> isn't supported, use the grouped icon
+            # that tries to fit big symbols into a small icon.
+            icon += '-s'
+        else:
+            # <scale> expands the grouped icon so that each icon in
+            # the group is as large as a single icon.
+            scale = f'\n        <scale>2</scale>'
+
+    icon_set.add(icon)
 
     # If the icon is part of a split cluster, give it an extended ID
     # and adjust its hotspot accordingly.
-    if n == 1:
-        x = '0.5' # from left side of icon
-        y = '0.5' # from bottom of icon
-    else:
-        id += f'-{i}{n}'
-        if n == 2:
-            y = '0.5'
-        else: # n > 2
+    if n > 1:
+        style += f'-{i}{n}'
+
+        if n > 2:
             if i < 2:
                 y = '0.03'
             else: # i >= 2
                 y = '0.97'
+        # else keep y = 0.5
 
         if i == 0 or (i == 2 and n == 4):
             x = '0.97'
         elif i == 1 or i == 3:
             x = '0.03'
-        else: # i == 2 and n == 3
-            x = '0.5'
+        # else keep x = 0.5
 
-    if id in id_set:
+    if style in style_set:
         # We've already written the style for this ID.
-        return id
-    id_set.add(id)
+        return
 
-    # The <scale> expands the grouped icon so that it is twice as big
-    # rather than just double the resolution.
-    #
-    # Avenza Maps doesn't support <scale>, which is unfortunate.
-    # But I go ahead and emit it in case I'm using the KML with
-    # Google Earth, which does support it.
-    #
-    # CalTopo also doesn't support the KML scale, but it supports
-    # scale in GeoJSON, which we write separately.
-    if n == 1 and '-' in id:
-        scale = f'\n        <scale>2</scale>'
-    else:
-        scale = ''
+    style_set.add(style)
+
+    url = icons.get_url(icon, relative)
 
     w.write(f"""    <Style id="{id}">
       <IconStyle>{scale}
@@ -211,10 +228,7 @@ def write_style(w, tags, i, n, relative):
     </Style>
 """)
 
-    return id
-
-
-def write_kml(w, relative=False, split_clusters=False):
+def write_kml(w, relative=False, split_clusters=False, small_icons=False):
     # relative = False: use GitHub URLs
     # rslative = True: use relative filenames within the filesystem
     #
@@ -230,10 +244,10 @@ def write_kml(w, relative=False, split_clusters=False):
     # Google Earth allows a placemark style to be defined inline with
     # its first usage, but Avenza Maps can't handle that.  So we define
     # all styles first, then list the placemark locations.
-    for avg_coord in avg_coords:
+    for coord in coords:
         for fold in fold_tags:
-            if fold[0] in avg_coord.tags:
-                avg_coord.tags.discard(fold[1])
+            if fold[0] in coord.tags:
+                coord.tags.discard(fold[1])
 
         if split_clusters:
             # I implemented split_clusters to try to work around
@@ -241,36 +255,26 @@ def write_kml(w, relative=False, split_clusters=False):
             # discovered that Avenza also fails to support hotspot
             # offsets.  Dammit!  So now split_clusters doesn't get
             # used.
-            avg_coord.id_list = []
-            i = 0
-            for x in tag_data:
-                tag = x[0]
-                if tag in avg_coord.tags:
-                    tag_set = set()
-                    tag_set.add(tag)
-                    id = write_style(w, tag_set, i, len(avg_coord.tags),
-                                     relative)
-                    avg_coord.id_list.append(id)
-                    i += 1
+            coord.id_list = coord.tag_list
         else:
-            id = write_style(w, avg_coord.tags, 0, 1, relative)
-            avg_coord.id_list = [id]
+            coord.id_list = [combined_id(coord.tag_list)]
 
-    for avg_coord in avg_coords:
-        for id in avg_coord.id_list:
+        for i, id in enumerate(coord.id_list):
+            write_style(w, id, i, len(coord.id_list), relative, small_icons)
+
+    for coord in coords:
+        for id in coord.id_list:
             w.write('    <Placemark>\n')
             w.write(f'      <styleUrl>#{id}</styleUrl>\n')
-            w.write(f'      <Point><coordinates>{avg_coord.lon:.6f},{avg_coord.lat:.6f},0</coordinates></Point>\n')
+            w.write(f'      <Point><coordinates>{coord.lon:.6f},{coord.lat:.6f},0</coordinates></Point>\n')
             w.write('    </Placemark>\n')
 
     w.write('''  </Document>
 </kml>
 ''')
 
-    # Knowing which icons were used is useful when writing a KMZ file.
-    return id_set
-
-id_set = set()
+icon_set = set()
+style_set = set()
 with open('facilities.kml', 'w') as w:
     write_kml(w, relative=False, split_clusters=False)
 
@@ -285,27 +289,16 @@ with open('facilities.kml', 'w') as w:
 # figured out how to do it is to extract the bytes from io.StringIO
 
 s = io.StringIO()
-id_set = set()
-write_kml(s, relative=True, split_clusters=False)
+icon_set = set()
+style_set = set()
+write_kml(s, relative=True, split_clusters=False, small_icons=True)
 
 with zipfile.ZipFile('facilities.kmz', mode='w') as archive:
     archive.writestr('facilities.kml', s.getvalue())
 
-    split_clusters = False
-    if split_clusters:
-        for x in tag_data:
-            tag = x[0]
-            tag_set = set()
-            tag_set.add(tag)
-            filename = icons.get_url(tag_set, relative=True)
-            archive.write(filename)
-    else:
-        file_set = set()
-        for avg_coord in cluster.avg_coords:
-            filename = icons.get_url(avg_coord.tags, relative=True)
-            if filename and filename not in file_set:
-                file_set.add(filename)
-                archive.write(filename)
+    for icon in icon_set:
+        filename = icons.get_url(icon, relative=True)
+        archive.write(filename)
 
 
 ###############################################################################
@@ -319,21 +312,20 @@ with open('facilities.json', 'w') as w:
     w.write(' [\n')
 
     first = True
-    for avg_coord in avg_coords:
-        id = icons.get_id(avg_coord.tags)
-        if id:
-            if first:
-                first = False
-            else:
-                w.write('  },\n')
-            w.write('  {"geometry":\n')
-            w.write(f'   {{"coordinates": [{avg_coord.lon:.6f},{avg_coord.lat:.6f},0,0], "type":"Point"}},\n')
-            w.write('   "properties": {\n')
-            if '-' in id:
-                w.write('    "marker-size":2,\n')
-            url = icons.get_url(avg_coord.tags)
-            w.write(f'    "marker-symbol": "{url}"\n')
-            w.write('   }\n')
+    for coord in coords:
+        id = combined_id(coord.tag_list)
+        if first:
+            first = False
+        else:
+            w.write('  },\n')
+        w.write('  {"geometry":\n')
+        w.write(f'   {{"coordinates": [{coord.lon:.6f},{coord.lat:.6f},0,0], "type":"Point"}},\n')
+        w.write('   "properties": {\n')
+        if '-' in id:
+            w.write('    "marker-size":2,\n')
+        url = icons.get_url(id)
+        w.write(f'    "marker-symbol": "{url}"\n')
+        w.write('   }\n')
 
     w.write('  }\n')
     w.write(' ],\n')
