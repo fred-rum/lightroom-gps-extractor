@@ -1,6 +1,60 @@
 #!/cygdrive/c/Python37/python
 #!/usr/bin/env python
 
+# Find photos in the Lightroom database with selected tags, get the
+# GPS coordinates of those photos, and make a file of geo-located
+# icons to be applied to maps.
+#
+# I use the results in CalTopo (the website), Google Earth (the PC app),
+# and Avenza Maps (on Android).
+#
+# The various apps support either KML/KMZ or GeoJSON.  A KMZ file can
+# include the PNG icons directly in the KMZ file.  The other formats
+# require that the PNG icons are hosted on a website.
+#
+# When multiple facilities are near each other, I prefer to group
+# them together and show their icons in some non-overlapping manner.
+# There are two possible ways to handle these clustered facilities.
+# Due to differences in support in the various apps, I've implemented
+# both of these and use the best one for each circumstance:
+#
+# 1. hotspot manipulation: the "hotspot" of each icon is centered on
+# the given GPS location.  A single icon should have its hotspot in
+# the center of the icon, but in a cluster of icons, the hotspot of
+# each icon should be offset so that icons only overlap at their
+# edges.
+#
+# 2. combined icons: a PNG is created for each clustered combination
+# of icons, and the cluster is then rendered with that single
+# clustered PNG.  In order to look natural, this clustered icon
+# should be displayed larger than any individual icon.
+# 
+#
+# In Google Earth, hotspot manipulation only properly offsets the
+# icons when looking straight down.  Any tilt of the 3-D camera messes
+# up the offset so that the icons overlap.  Therefore, for Google
+# Earth I use combined icons.  Google Earth only supports KML/KMZ.  My
+# script initially created only a KML file (which uses externally
+# hosted icons), but the script now also creats a KMZ file (with
+# integrated icons).  Either one works in Google Earth.
+#
+# Avenza Maps also supports KML/KMZ.  It can't read icons from a
+# separate website, however, so my script creates a KMZ file with
+# integrated icons for use with Avenza Maps.  (It also works with
+# Google Earth as mentioned above.)  Unfortunately, Avenza Maps
+# doesn't support icon scaling or hotspot manipulation.  The best I
+# can do for now is to emit combined icons and accept that they aren't
+# scaled correctly.
+#
+# CalTopo has some support for KML/KMZ, but not icon scaling or
+# hotspot manipulation.  However, CalTopo supports icon scaling in
+# GeoJSON, so I create a GeoJSON file for CalTopo.
+#
+# Note that I don't end up using hotspot manipulation for any of
+# the above cases.  I implemented it in the hopes that I could get
+# it to work in Avenza Maps, but now I don't use it for anything.
+
+
 import sqlite3
 import sys
 import re
@@ -181,16 +235,12 @@ def write_kml(w, relative=False, split_clusters=False):
             if fold[0] in avg_coord.tags:
                 avg_coord.tags.discard(fold[1])
 
-        # I implemented split_clusters to try to work around Avenza's lack of
-        # support for icon scales, but then I discovered that Avenza also fails
-        # to support hotspot offsets.  Dammit!  So now split_clusters doesn't
-        # get used.
-        #
-        # Amusingly, Google Earth supports hotspot offsets, but the "y" offset
-        # is applied before the view is tilted, so the icons run together when
-        # viewing at an angle.
-
         if split_clusters:
+            # I implemented split_clusters to try to work around
+            # Avenza's lack of support for icon scales, but then I
+            # discovered that Avenza also fails to support hotspot
+            # offsets.  Dammit!  So now split_clusters doesn't get
+            # used.
             avg_coord.id_list = []
             i = 0
             for x in tag_data:
