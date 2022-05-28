@@ -273,11 +273,6 @@ def write_kml(w, relative=False, split_clusters=False, small_icons=False):
 </kml>
 ''')
 
-icon_set = set()
-style_set = set()
-with open('facilities.kml', 'w') as w:
-    write_kml(w, relative=False, split_clusters=False)
-
 
 ###############################################################################
 # Write KMZ
@@ -288,17 +283,33 @@ with open('facilities.kml', 'w') as w:
 # or the documentation is particularly terrible (or both).  The only way I've
 # figured out how to do it is to extract the bytes from io.StringIO
 
-s = io.StringIO()
-icon_set = set()
-style_set = set()
-write_kml(s, relative=True, split_clusters=False, small_icons=True)
+def write_kmz(filename, split_clusters, small_icons):
+    global icon_set, style_set
 
-with zipfile.ZipFile('facilities.kmz', mode='w') as archive:
-    archive.writestr('facilities.kml', s.getvalue())
+    icon_set = set()
+    style_set = set()
 
-    for icon in icon_set:
-        filename = icons.get_url(icon, relative=True)
-        archive.write(filename)
+    s = io.StringIO()
+    write_kml(s,
+              relative=True,
+              split_clusters=split_clusters,
+              small_icons=small_icons)
+
+    with zipfile.ZipFile(filename, mode='w') as archive:
+        archive.writestr('facilities.kml', s.getvalue())
+
+        for icon in icon_set:
+            filename = icons.get_url(icon, relative=True)
+            archive.write(filename)
+
+
+write_kmz('facilities_google.kmz',
+          split_clusters=False,
+          small_icons=False)
+
+write_kmz('_facilities_avenza.kmz',
+          split_clusters=False,
+          small_icons=True)
 
 
 ###############################################################################
@@ -307,7 +318,7 @@ with zipfile.ZipFile('facilities.kmz', mode='w') as archive:
 # CalTopo reads the scale (marker-size) correctly in GeoJSON format.
 # But Google Earth can't read GeoJSON.
 
-with open('facilities.json', 'w') as w:
+with open('facilities_caltopo.json', 'w') as w:
     w.write('{"features":\n')
     w.write(' [\n')
 
