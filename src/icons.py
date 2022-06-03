@@ -13,14 +13,8 @@ class Icons:
                 id = filename[:pos]
                 self.id_set.add(id)
 
-    def get_id(self, tag_set):
-        f_set = frozenset(tag_set)
-        if f_set not in self.id:
-            # Print an error message and record the tag set so that we don't
-            # print the error message again later for the same set.
-            print(f'Need icon for {tag_set}')
-            self.id[f_set] = None
-        return self.id[f_set]
+    def get_id_set(self):
+        return self.id_set
 
     def get_url(self, id, relative=False):
         if id not in self.id_set:

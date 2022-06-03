@@ -1,0 +1,17 @@
+centauries
+37.310531, -122.189839 https://www.inaturalist.org/observations/19705845
+
+yerba buena
+37.308356, -122.188916 https://www.inaturalist.org/observations/50954390
+
+peak rushrose
+37.307365, -122.188414 https://www.inaturalist.org/observations/50946431
+
+bush poppy
+37.305642, -122.186897 https://www.inaturalist.org/observations/49538350
+
+denseflower willowherb
+37.305865, -122.185727 https://www.inaturalist.org/observations/50954389
+
+bull mallow
+37.307677, -122.175718 https://www.inaturalist.org/observations/48205819

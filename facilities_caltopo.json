@@ -1241,13 +1241,13 @@
    }
   },
   {"geometry":
-   {"coordinates": [-121.694523,37.019037,0,0], "type":"Point"},
+   {"coordinates": [-121.694765,37.018929,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
    }
   },
   {"geometry":
-   {"coordinates": [-121.684383,37.014882,0,0], "type":"Point"},
+   {"coordinates": [-121.684344,37.014951,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
    }
@@ -1289,7 +1289,13 @@
    }
   },
   {"geometry":
-   {"coordinates": [-121.712783,37.001615,0,0], "type":"Point"},
+   {"coordinates": [-121.698953,37.002676,0,0], "type":"Point"},
+   "properties": {
+    "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/table.png"
+   }
+  },
+  {"geometry":
+   {"coordinates": [-121.712794,37.001576,0,0], "type":"Point"},
    "properties": {
     "marker-symbol": "https://fred-rum.github.io/lightroom-gps-extractor/icons/bench.png"
    }

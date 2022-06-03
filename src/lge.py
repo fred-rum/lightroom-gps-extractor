@@ -54,6 +54,11 @@
 # the above cases.  I implemented it in the hopes that I could get
 # it to work in Avenza Maps, but now I don't use it for anything.
 
+# Example command line:
+# src/lge.py -points 'data/skyline ridge - old page mill.txt' -avenza 'flowers - skyline ridge.kmz'
+#
+# If no args are passed, see args.py for the default applied args.
+
 
 import sqlite3
 import sys
@@ -62,23 +67,10 @@ import io
 import zipfile
 
 # My files
+from args import *
 from cluster import *
 from icons import *
 
-# The keywords data is a list of tuples, with each tuple as follows:
-#   tag: a safe XML ID and the expected icon name
-#   keyword: as used in Lightroom
-#
-# These tags are sorted in the order in which their icons should be clustered,
-# starting in the upper left and proceeding in rows.
-tag_data = (
-    ('parking', 'parking'),
-    ('restroom', 'restroom'),
-    ('water', 'drinking fountain'),
-    ('table', 'table'),
-    ('bench', 'bench'),
-    ('seat', 'log/boulder')
-)
 
 # If the first tag is present, the second tag is supercilious and discarded.
 fold_tags = (
@@ -87,67 +79,97 @@ fold_tags = (
     ('table', 'seat')
 )
 
+
+cluster = Cluster(arg('-clusters'))
+icons = Icons(sys.argv)
+tag_list = []
+supported_tags = set()
+
+
 ###############################################################################
 # Read Lightroom SQL
 
-sql_con = sqlite3.connect("file:C:/Users/Chris/Pictures/Lightroom/Photos.lrcat?mode=ro", uri=True)
-sql_con.row_factory = sqlite3.Row
+if arg('-lightroom'):
+    # The keywords data is a list of tuples, with each tuple as follows:
+    #   tag: a safe XML ID and the expected icon name
+    #   keyword: as used in Lightroom
+    #
+    # These tags are sorted in the order in which their icons should be clustered,
+    # starting in the upper left and proceeding in rows.
+    tag_data = (
+        ('parking', 'parking'),
+        ('restroom', 'restroom'),
+        ('water', 'drinking fountain'),
+        ('table', 'table'),
+        ('bench', 'bench'),
+        ('seat', 'log/boulder')
+    )
 
-cluster = Cluster()
-icons = Icons(sys.argv)
-supported_tags = set()
+    sql_con = sqlite3.connect("file:C:/Users/Chris/Pictures/Lightroom/Photos.lrcat?mode=ro", uri=True)
+    sql_con.row_factory = sqlite3.Row
 
-for x in tag_data:
-    (tag, keyword) = x
-    supported_tags.add(tag)
+    for x in tag_data:
+        (tag, keyword) = x
+        tag_list.append(tag)
+        supported_tags.add(tag)
 
-    sql_results = sql_con.execute(f"""SELECT
-AgHarvestedExifMetadata.gpsLatitude as 'latitude',
-AgHarvestedExifMetadata.gpsLongitude as 'longitude'
-FROM
-Adobe_images,
-AgLibraryKeywordImage,
-AgLibraryKeyword,
-AgHarvestedExifMetadata
-WHERE
-AgHarvestedExifMetadata.hasGPS = 1
-AND AgHarvestedExifMetadata.image = Adobe_images.id_local
-AND AgLibraryKeywordImage.image = Adobe_images.id_local
-AND AgLibraryKeywordImage.tag = AgLibraryKeyword.id_local
-AND AgLibraryKeyword.lc_name = '{keyword}';""")
+        sql_results = sql_con.execute(f"""SELECT
+    AgHarvestedExifMetadata.gpsLatitude as 'latitude',
+    AgHarvestedExifMetadata.gpsLongitude as 'longitude'
+    FROM
+    Adobe_images,
+    AgLibraryKeywordImage,
+    AgLibraryKeyword,
+    AgHarvestedExifMetadata
+    WHERE
+    AgHarvestedExifMetadata.hasGPS = 1
+    AND AgHarvestedExifMetadata.image = Adobe_images.id_local
+    AND AgLibraryKeywordImage.image = Adobe_images.id_local
+    AND AgLibraryKeywordImage.tag = AgLibraryKeyword.id_local
+    AND AgLibraryKeyword.lc_name = '{keyword}';""")
 
-    for r in sql_results:
-        cluster.add_coord(tag, r['latitude'], r['longitude'])
+        for r in sql_results:
+            cluster.add_coord(tag, r['latitude'], r['longitude'])
 
-sql_con.close()
+    sql_con.close()
+
+
+###############################################################################
+# Add a supported tag for each unclustered icon.
+
+for id in icons.get_id_set():
+    if '-' not in id and id not in supported_tags:
+        tag_list.append(id)
+        supported_tags.add(id)
 
 
 ###############################################################################
 # Read data/points.txt
 
-tags_used = True
-with open('data/points.txt', 'r') as f:
-    for index, line in enumerate(f):
-        line = line.strip()
+if arg('-points'):
+    tags_used = True
+    with open(arg('-points'), 'r') as f:
+        for index, line in enumerate(f):
+            line = line.strip()
 
-        # Look for <latitude>, <longitude> <optional comment>
-        matchobj = re.match(r'(-?[0-9]+\.?[0-9]*)\s*,\s*(-?[0-9]+\.?[0-9]*)(?:\s+(.*?))?$', line)
-        if matchobj and tags:
-            for tag in tags:
-                lat = float(matchobj[1])
-                lon = float(matchobj[2])
-                cluster.add_coord(tag, lat, lon)
-            tags_used = True
-        elif line in supported_tags:
-            if tags_used:
-                tags = set()
-                tags_used = False
-            tags.add(line)
-        elif line == '':
-            # skip blank lines (including the one followed by EOF)
-            pass
-        else:
-            print(f'Unrecognized line {index} in data/points.txt: {line}')
+            # Look for <latitude>, <longitude> <optional comment>
+            matchobj = re.match(r'(-?[0-9]+\.?[0-9]*)\s*,\s*(-?[0-9]+\.?[0-9]*)(?:\s+(.*?))?$', line)
+            if line == '' or line.startswith('#'):
+                # skip blank lines (including the one followed by EOF)
+                pass
+            elif matchobj and tags:
+                for tag in tags:
+                    lat = float(matchobj[1])
+                    lon = float(matchobj[2])
+                    cluster.add_coord(tag, lat, lon)
+                tags_used = True
+            elif line in supported_tags:
+                if tags_used:
+                    tags = set()
+                    tags_used = False
+                tags.add(line)
+            else:
+                print(f'Unrecognized line {index} in data/points.txt: {line}')
 
 def by_lat(avg_coord):
     return -avg_coord.lat
@@ -163,10 +185,10 @@ for coord in coords:
     # We'll either create a cluster icons in this order or use a
     # premade cluster icon that we expect to be named in this order.
     coord.tag_list = []
-    for x in tag_data:
-        tag = x[0]
+    for tag in tag_list:
         if tag in coord.tags:
             coord.tag_list.append(tag)
+
 
 ###############################################################################
 # Write KML
@@ -303,13 +325,15 @@ def write_kmz(filename, split_clusters, small_icons):
             archive.write(filename)
 
 
-write_kmz('facilities_google.kmz',
-          split_clusters=False,
-          small_icons=False)
+if arg('-google'):
+    write_kmz(arg('-google'),
+              split_clusters=False,
+              small_icons=False)
 
-write_kmz('_facilities_avenza.kmz',
-          split_clusters=False,
-          small_icons=True)
+if arg('-avenza'):
+    write_kmz(arg('-avenza'),
+              split_clusters=False,
+              small_icons=True)
 
 
 ###############################################################################
@@ -318,27 +342,28 @@ write_kmz('_facilities_avenza.kmz',
 # CalTopo reads the scale (marker-size) correctly in GeoJSON format.
 # But Google Earth can't read GeoJSON.
 
-with open('facilities_caltopo.json', 'w') as w:
-    w.write('{"features":\n')
-    w.write(' [\n')
+if arg('-caltopo'):
+    with open(arg('-caltopo'), 'w') as w:
+        w.write('{"features":\n')
+        w.write(' [\n')
 
-    first = True
-    for coord in coords:
-        id = combined_id(coord.tag_list)
-        if first:
-            first = False
-        else:
-            w.write('  },\n')
-        w.write('  {"geometry":\n')
-        w.write(f'   {{"coordinates": [{coord.lon:.6f},{coord.lat:.6f},0,0], "type":"Point"}},\n')
-        w.write('   "properties": {\n')
-        if '-' in id:
-            w.write('    "marker-size":2,\n')
-        url = icons.get_url(id)
-        w.write(f'    "marker-symbol": "{url}"\n')
-        w.write('   }\n')
+        first = True
+        for coord in coords:
+            id = combined_id(coord.tag_list)
+            if first:
+                first = False
+            else:
+                w.write('  },\n')
+            w.write('  {"geometry":\n')
+            w.write(f'   {{"coordinates": [{coord.lon:.6f},{coord.lat:.6f},0,0], "type":"Point"}},\n')
+            w.write('   "properties": {\n')
+            if '-' in id:
+                w.write('    "marker-size":2,\n')
+            url = icons.get_url(id)
+            w.write(f'    "marker-symbol": "{url}"\n')
+            w.write('   }\n')
 
-    w.write('  }\n')
-    w.write(' ],\n')
-    w.write(' "type": "FeatureCollection"\n')
-    w.write('}\n')
+        w.write('  }\n')
+        w.write(' ],\n')
+        w.write(' "type": "FeatureCollection"\n')
+        w.write('}\n')

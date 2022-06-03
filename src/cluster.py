@@ -12,7 +12,7 @@ clump_dist_squared = clump_dist * clump_dist
 class Coord:
     pass
 
-    def __init__(self, cluster, tag, lat, lon):
+    def __init__(self, cluster, tag, lat, lon, cluster_unlike):
         self.lat = lat
         self.lon = lon
 
@@ -40,8 +40,9 @@ class Coord:
             m_lat_diff = self.m_lat - coord.m_lat
             m_lon_diff = self.m_lon - coord.m_lon
             dist_squared = (m_lat_diff * m_lat_diff) + (m_lon_diff * m_lon_diff)
-            if dist_squared < clump_dist_squared:
-                if  self.avg_coord == coord.avg_coord:
+            if (dist_squared < clump_dist_squared and
+                (cluster_unlike or tag in coord.avg_coord.tags)):
+                if self.avg_coord == coord.avg_coord:
                     # If the nearby coordinate already uses the same avg_coord
                     # as the current coordinate, that's because it was in the
                     # same AvgCoord as a previous coordinate that got
@@ -91,9 +92,10 @@ class AvgCoord:
 class Cluster:
     pass
 
-    def __init__(self):
+    def __init__(self, cluster_unlike):
         self.coords = set()
         self.avg_coords = set()
+        self.cluster_unlike = cluster_unlike
 
     def add_coord(self, tag, lat, lon):
-        Coord(self, tag, lat, lon)
+        Coord(self, tag, lat, lon, self.cluster_unlike)
