@@ -95,3 +95,9 @@ Instead of combining icons into a single image, add them separately to
 
 Sort avg_coords before emitting them so that the output order doesn't
 change every time.
+
+With no arguments, it spits out all the files I'm interested in.
+So just run it like this:
+
+src/lge.py
+cp _facilities_avenza.kmz '../../../Desktop/Hikes/GeoPDF Maps/tracks/'
