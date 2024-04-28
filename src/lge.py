@@ -105,7 +105,7 @@ if arg('-lightroom'):
         ('seat', 'log/boulder')
     )
 
-    sql_con = sqlite3.connect("file:C:/Users/Chris/Pictures/Lightroom/Photos.lrcat?mode=ro", uri=True)
+    sql_con = sqlite3.connect("file:G:/Photos/Photos.lrcat?mode=ro", uri=True)
     sql_con.row_factory = sqlite3.Row
 
     for x in tag_data:

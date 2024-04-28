@@ -100,4 +100,4 @@ With no arguments, it spits out all the files I'm interested in.
 So just run it like this:
 
 src/lge.py
-cp _facilities_avenza.kmz '../../../Desktop/Hikes/GeoPDF Maps/tracks/'
+cp _facilities_avenza.kmz '/cygdrive/c/Users/cpnsp/OneDrive/Desktop/Hikes/GeoPDF Maps/tracks/'
